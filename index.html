@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="campaign.css">
+    <script src="campaign.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Campaign XYZ</h1>
+        <div class="form">
+            <div class="row">
+                <div class="form-control">
+                    <label class="details-label" for="firstName">First name:</label>
+                    <input class="details-input" type="text" id="firstName" name="firstName" oninput="saveToLocalStorage('firstName', this.value)">
+                </div>
+                <div class="form-control">
+                    <label class="details-label" for="lastName">Last name:</label>
+                    <input class="details-input" type="text" id="lastName" name="lastName" oninput="saveToLocalStorage('lastName', this.value)">
+                </div>
+                <div class="form-control">
+                    <label class="details-label" for="city">City:</label>
+                    <input class="details-input" type="text" id="city" name="city" oninput="saveToLocalStorage('city', this.value)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-control">
+                    <label class="details-label" for="state">State:</label>
+                    <input class="details-input" type="text" id="state" name="state" oninput="saveToLocalStorage('state', this.value)">
+                </div>
+                <div class="form-control">
+                    <label class="details-label" for="zip">Zip:</label>
+                    <input class="details-input" type="text" id="zip" name="zip" oninput="saveToLocalStorage('zip', this.value)">
+                </div>
+                <div class="form-control">
+                    <label class="details-label" for="companyName">Company name:</label>
+                    <input class="details-input" type="text" id="companyName" name="companyName" oninput="saveToLocalStorage('companyName', this.value)">
+                </div>
+            </div>
+        </div>
+        <h2>INTRO</h2>
+        <div class="intro" id="introParagraphs">
+        </div>
+        <div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
